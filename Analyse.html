@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang='no'>
+
+<head>
+  <title>
+    Hjem
+  </title>
+
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="canonical" href="https://example.com" />
+  <link rel="icon" type="image/x-icon" href="logo/logo3.png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=optional" rel="stylesheet">
+  <meta name="theme-color" content="#317EFB" />
+
+  <!-- HTML Meta Tags -->
+  <meta name="description" content="webutvikling Eksamen">
+  <meta name="keywords" content="webutvikling Eksamen">
+  <meta name="author" content="Gorgos">
+
+  <meta property="og:url" content="https://itstud.hiof.no/~gorgosft/webutviklingEksamen/index.html#">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="webutvikling">
+  <meta property="og:description" content="html, css , seo , uu">
+  <meta property="og:image" content="https://itstud.hiof.no/~gorgosft/webutviklingEksamen/bilder/bilde1.jpeg">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="itstud.hiof.no">
+  <meta property="twitter:url" content="https://itstud.hiof.no/~gorgosft/webutviklingEksamen/index.html#">
+  <meta name="twitter:title" content="webutvikling">
+  <meta name="twitter:description" content="html, css , seo , uu">
+  <meta name="twitter:image" content="https://itstud.hiof.no/~gorgosft/webutviklingEksamen/bilder/bilde1.jpeg">
+
+
+
+
+
+</head>
+
+<body>
+  <div id="grid-container">
+
+    <header>
+
+      <h1>UU vs SEO </h1>
+
+
+
+      <!-- jeg took inspo fra dette da det gjeller nav
+  https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+    </header>
+    <nav class="topnav" id="myTopnav">
+      <a href="index.html"><img src="logo/logo3.png" alt="logo"></a>
+      <a href="index.html" class="active">Home</a>
+      <a href="UUvsSEO.html">UU vs SEO</a>
+      <a href="cms.html">CMS</a>
+      <a href="Analyse.html">Analyse</a>
+      <a href="kontant.html">Kontakt oss</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+
+        <i class="fa fa-bars"></i>
+
+
+
+      </a>
+    </nav>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+
+    <main>
+
+      <h2 class="analyseh">Analysering</h2>
+
+
+      <article class="test">
+        <h4>Litt intro</h4>
+
+        <p>
+          i dette oppgave så jeg analyserer nettsiden min så jeg ser hvor bra den er, hva som er dårlig eller mangler,
+          Jeg analyserer nettsidene mine ved hjelp av to vertøy en som er innbyged i chorme den andre er en nettside som
+          hetter <a href="https://wave.webaim.org/" id="wave">wave.webaim</a>,
+          Jeg tok skjærm biilder av før og etter jeg fiksa på nettsidene, jeg skrev en vanlige tekst og en table som ta
+          for seg det samme, men litt annledes
+        </p>
+
+
+        <h2 id="innhold">Analyse av index siden</h2>
+
+        <h4>Performance</h4>
+        <img src="bilder/indexfor1.png" alt="bilde før endring av index siden" class="Analyse">
+
+        <p>
+          Jeg satt inn nettsiden min, skolen server og jeg brukte lighthous og fikk dette resultat på index siden.
+        </p>
+        <p>
+          jeg fikk 97 på Performance, det jeg gjøre for å fikse på det er at jeg fjarna ting på i css som ikke
+          er i bruk og som er unødvendig, det gjør at nettsdien ikke bruker unødvendig tid på å gå gjennom ting som ikke
+          viktig.
+          Jeg gjøre også bildene mindre så ikke nettsiden bruker tid på å laste ned stor bilder, det gjør at nettsiden
+          for bedre Performance.
+
+        </p>
+
+        <h4>Accessibility</h4>
+        <p>
+          jeg fikk 96 på Accessibility, det jeg gjøre for fikse på det var at jeg hadde glemt "alt" tagen på noen av
+          bildene. Jeg la til alt tagene på alle
+          bilden.Silk at jeg fikser på nettsdien. Alt tagen er viktig for Accessibility fordi den forklaere bilden med
+          tekst og i tilfelle bilden ikke lastes opp så vil
+          ikke bukeren så noe inforamsjon om hva det bilde av men med alt taggen så vil brukeren få inforamasjon om hva
+          bilde handler om.
+          Og jeg hadde litt feil på rekkefølge av h tagene, så jeg måtte bytte det
+
+        </p>
+        <p>
+          Jeg brukte aria-label på alle linke til å forkalrer hva de gjør og hva de handler om.
+        </p>
+
+        <h4>best Practices</h4>
+        <p>jeg hadde 100 på den så jeg gjøre ikke noe serlig med det, siden jeg hadde 100 på den</p>
+
+        <h4>SEO</h4>
+        <p>jeg hadde den på 80, det jeg gjøre for å fikse på derty jeg la inn meta data/tagene og viksa på linker som
+          ikke har noe å gjøre,
+          jeg gjøre det ved å legge inn aria-label</p>
+
+        <h4>Slut resultat</h4>
+        <img src="bilder/indexetter.png" alt="bilde av Slut resultat for index siden" class="Analyse">
+
+
+
+
+
+        <h2 class="analyseh">Analyse av SEO VS UU siden</h2>
+
+
+
+
+
+        <h4>Performance</h4>
+        <img src="bilder/seooguu.png" alt="bilde før endring av SEO VS UU siden" class="Analyse">
+
+
+        <p>
+          jeg fikk 99 på Performance i SEO VS UU siden, jeg fikk det så bra fordi jeg hadde ikke mye bilder på siden så
+          det gjør at Performance bil så bra.
+
+        </p>
+
+        <h4>Accessibility</h4>
+        <p>
+          Jeg fikk 91 på Accessibility, Jeg hadde dårlig Kontrast på testen på siden,
+          jeg fiksa det ved å endra på fargene på teskten så det passer bedre med nettsiden,
+          og jeg hadde en h taggen som ikke var i rekke følge så jeg fiksa på det
+
+        </p>
+        <p>
+          Jeg brukte aria-label på alle linke til å forkalrer hva de gjør og hva de handler om.
+        </p>
+
+        <h4>best Practices</h4>
+        <p>jeg hadde 100 på den så jeg gjøre ikke noe serlig med det, siden jeg hadde 100 på den</p>
+
+        <h4>SEO</h4>
+        <p>jeg hadde den på 80, det jeg gjøre for å fikse på det var at jeg la inn meta data/tagene og viksa på linker
+          som ikke har noe å gjøre,
+          jeg gjøre det ved å legge inn aria-label</p>
+
+        <h4>Slut resultat på hjemsiden:</h4>
+        <img src="bilder/Seovsetter.png" alt="bilde av Slut resultat for SEO VS UU side" class="Analyse">
+
+
+
+
+
+
+        <h2 class="analyseh">Analyse av CSM siden</h2>
+
+
+
+        <h4>Performance</h4>
+        <img src="bilder/CSM.png" alt="bilde før endring av CSM siden" class="Analyse">
+
+
+        <p>
+          jeg fikk 98 på Performance i CMS siden, det jeg gjøre for å fikse på det var jeg jeg minska storelse på bilden
+        </p>
+
+        <h4>Accessibility</h4>
+        <p>
+          Jeg fikk 89 på Accessibility, Jeg hadde dårlig Kontrast på testen på siden,
+          jeg fiksa det ved å endra på fargene på teskten så det passer bedre med nettsiden så for at bruker har det mye
+          bedre da leser på nettsdien,
+          og jeg hadde noenb "h" tagger som ikke var i rekke følge så jeg fiksa på det.
+
+        </p>
+
+
+        <h4>best Practices</h4>
+        <p>jeg hadde 100 på den så jeg gjøre ikke noe serlig med det, siden jeg hadde 100 på den</p>
+
+        <h4>Cms</h4>
+        <p>jeg hadde den på 70, det jeg gjøre for å fikse på SEO det var at jeg la fiksa på meta data/tagene og fiksa på
+          linker som ikke har noe å gjøre på nettsdien,
+          jeg gjøre det ved å legge inn aria-label, jeg hadde også skrevet "meta viewport" feil så jeg fiksa på det også
+        </p>
+
+        <h4>Slut resultat</h4>
+        <img src="bilder/cmsetter.png" alt="bilde av Slut resultat for CSM side" class="Analyse">
+
+
+
+
+        <h2 class="analyseh">Analyse av kontakt siden</h2>
+
+
+
+
+
+        <h4>Performance</h4>
+        <img src="bilder/kontaktfor.png" alt="bilde før endring av kontakt siden" class="Analyse">
+
+
+        <p>
+          jeg fikk 99 på Performance i kontakt siden, det jeg gjøre for å fikse på det var jeg jeg minska tok bort som
+          ikke var viktig, og gjøre bilden mindre </p>
+
+        <h4>Accessibility</h4>
+        <p>
+          Jeg fikk 85 på Accessibility, Jeg hadde dårlig Kontrast på testen som var på siden, det jeg gjøre for å fikse
+          på det var aqt jeg tilpasse skrift
+          fargen så den for bedre kontrakt med bakgrunnen og tekstern bil mere behaglig å lese. Jeg hadde også noen
+          linker som ikke hadde tekst på seg, for å fikse på det
+          så jeg la inn "aria-label" og forklarete med tekst hva linker gjøre og hvor de er linket til. På kontakt side
+          så hadde jeg brukt iframe men jeg hadde glemt og legge in
+          title taggen in i iframe, så jeg fiksa det, og jeg hadde noe "h" tager so ikke var riktig brukt så jeg fiksa
+          på de.
+        </p>
+
+
+        <h4>best Practices</h4>
+        <p>jeg hadde 92 jeg prøve å fjerne alle javascript kode som ikke var viktig</p>
+
+        <h4>SEO</h4>
+        <p>jeg hadde den på 80, det som gjøre SEO dårlig hos mede var at jeg hadde skrevet meta data/tagene og feil så
+          jeg fikse på dem.
+        </p>
+
+        <h4>Slut resultat</h4>
+        <img src="bilder/kontaktetter.png" alt="bilde av Slut resultat for kontakt siden" class="Analyse">
+
+
+
+
+
+        <h2 class="analyseh">Analyse av Analyse siden</h2>
+
+
+
+
+
+        <h4>Performance</h4>
+        <img src="bilder/analysefor.png" alt="bilde før endring av Analyse siden" class="Analyse">
+
+
+        <p>
+          jeg fikk 99 på Performance i kontakt siden, det jeg gjøre for å fikse på det var jeg jeg minska tok bort som
+          ikke var viktig, og gjøre bilden mindre for prøve å få den til 100. </p>
+
+        <h4>Accessibility</h4>
+        <p>
+          Jeg fikk 94 på Accessibility, Jeg hadde dårlig Kontrast på testen som var på siden, det jeg gjøre for å fikse
+          på det var aqt jeg tilpasse skrift
+          fargen så den for bedre kontrakt med bakgrunnen og tekstern bil mere behaglig å lese. . og jeg hadde noe "h"
+          tager so ikke var riktig brukt så jeg fiksa på de.
+        </p>
+
+
+        <h4>best Practices</h4>
+        <p>jeg hadde 83 og grunne var at jeg hadde bilder som ikke så bra ut så, så det jeg gjøre er å fikse på de slikk
+          at alle bilden ser fine.</p>
+
+        <h4>Cms</h4>
+        <p>jeg hadde den på 90 SEO, jeg hadde med alle meta tagene.</p>
+
+        <h4>Slut resultat</h4>
+        <img src="bilder/kontaktetter.png" alt="bilde av Slut resultat for Analyse siden" class="Analyse">
+        
+        
+        
+        <h4>Tilgjenglhetarklæring</h4>
+
+        
+  
+        <p>her er min <a href="bilder/WCAG.pdf"  id="WCAG">Tilgjengliheterklaring </a>.</p>
+        
+
+
+
+
+
+
+      </article>
+        
+
+
+
+
+          <section id="tableanalyse">
+
+            <section class="head" id="headofcms">
+              <h5>før</h5>
+
+            </section>
+            <section class="head">
+              <h5> etter</h5>
+            </section>
+            <section class="head Border">
+              <h5>Endring</h5>
+            </section>
+
+
+
+            <section>
+              <h6>hjemme siden</h6>
+              <img src="bilder/indextabel.png" alt="bilde av hjemme siden for" class="imgtabelanalyse">
+
+            </section>
+            <section>
+              <h6>hjemme siden</h6>
+              <img src="bilder/tableindexetter.png" alt="bilde av hjemme siden etter" class="imgtabelanalyse">
+
+
+            </section>
+            <section class="Border">
+
+              <h6>hjemme siden</h6>
+              <p>Jeg hadde store bilde jeg gjøre dem mindre</p>
+              <p>Jeg hadde glemt "alt" taggen på noen av bildene </p>
+              <p>Jeg la inn meta data/tagene</p>
+              <p>Jeg brukte aria-label der linke var tome</p>
+
+            </section>
+
+
+            <section>
+              <h6>SEO vs UU</h6>
+              <img src="bilder/seooguufortable.png" alt="bilde av SEO vs UU siden for" class="imgtabelanalyse">
+
+            </section>
+            <section>
+              <h6>SEO vs UU</h6>
+              <img src="bilder/seotableetter.png" alt="bilde av SEO vs UU siden etter" class="imgtabelanalyse">
+
+
+            </section>
+            <section class="Border">
+
+              <h6>SEO vs UU</h6>
+              <p>Jeg fiksa på kontrast mellom teksten og bakgrunn</p>
+              <p>Jeg fiska på "h" taggene</p>
+              <p>Jeg hadde skrevet noen av meta taggene</p>
+
+            </section>
+
+            <section>
+              <h6>CMS</h6>
+              <img src="bilder/CMATableretter.png" alt="bilde av CSM siden for" class="imgtabelanalyse">
+
+            </section>
+            <section>
+              <h6>CSM</h6>
+              <img src="bilder/cmstetter.png" alt="bilde av CSM siden etter" class="imgtabelanalyse">
+
+
+            </section>
+            <section class="Border">
+
+              <h6>CSM</h6>
+              <p>Jeg fiksa på kontrast mellom teksten og bakgrunn</p>
+              <p>Jeg fiska på "h" taggene</p>
+              <p>Jeg hadde skrevet noen av meta taggene</p>
+              <p>fiksa på meta taggene</p>
+
+            </section>
+
+            <section>
+              <h6>kontakt siden</h6>
+              <img src="bilder/kontakttFor.png" alt="bilde av kontakt siden for" class="imgtabelanalyse">
+
+            </section>
+            <section>
+              <h6>kontakt siden</h6>
+              <img src="bilder/kontakttetter.png" alt="bilde av kontakt siden etter" class="imgtabelanalyse">
+
+
+            </section>
+            <section class="Border">
+
+              <h6>kontakt siden</h6>
+              <p>Jeg la inn meta data/tagene</p>
+              <p>fjerna ekstra linker</p>
+              <p>jeg ga iframe en title</p>
+
+            </section>
+
+            <section>
+              <h6>analyse siden</h6>
+              <img src="bilder/analysetfor.png" alt="bilde av analyse siden for" class="imgtabelanalyse">
+
+            </section>
+            <section>
+              <h6>analyse siden</h6>
+              <img src="bilder/kontakttetter.png" alt="bilde av analyse siden etter" class="imgtabelanalyse">
+
+
+            </section>
+            <section class="Border">
+
+              <h6>analyse siden</h6>
+              <p>fiska på bilde ratio</p>
+              <p>Jeg fiska på "h" taggene</p>
+              <p>Jeg hadde skrevet noen av meta taggene</p>
+
+            </section>
+
+
+
+
+
+
+
+          </section>
+          <article id="kontakt">
+
+
+            <a href="#" class="fa fa-facebook" aria-label="link til facebook deling"> share</a>
+            <a href="#" class="fa fa-twitter" aria-label="link til twitter deling"> share</a>
+            <a href="#" class="fa fa-pinterest" aria-label="link til pinterest deling"> share</a>
+
+
+          </article>
+
+    </main>
+  </div>
+  <footer>
+    <p> Gorgos Fares Tammo || Gorgos@gmail.com </p>
+    <section>
+      <p>Du kan følge oss på:</p>
+      <!-- La inn aria label in wave -->
+      <a href="https://www.facebook.com" class="fa fa-facebook" aria-label="link til facebook side"></a>
+      <a href="https://twitter.com/home" class="fa fa-twitter" aria-label="link til twitter side"></a>
+      <a href="https://no.pinterest.com/" class="fa fa-pinterest" aria-label="link til pinterest side"></a>
+    </section>
+  </footer>
+</body>
+
+
+
+</html>

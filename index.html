@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang='no'>
+  <head>
+    <title>
+      	Hjem
+    </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="canonical" href="https://example.com"/>
+    <link rel="icon" type="image/x-icon" href="logo/logo3.png" >
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=optional" rel="stylesheet">
+    <meta name="theme-color" content="#317EFB"/>
+    
+    <!-- HTML Meta Tags -->
+    <meta name="description" content="webutvikling Eksamen">
+    <meta name="keywords" content="webutvikling Eksamen">
+    <meta name="author" content="Gorgos">
+    
+    <meta property="og:url" content="https://itstud.hiof.no/~gorgosft/webutviklingEksamen/index.html#">
+    <meta property="og:type" content="article" >
+    <meta property="og:title" content="webutvikling">
+    <meta property="og:description" content="html, css , seo , uu" >
+    <meta property="og:image" content="https://itstud.hiof.no/~gorgosft/webutviklingEksamen/bilder/bilde1.jpeg">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="itstud.hiof.no">
+    <meta property="twitter:url" content="https://itstud.hiof.no/~gorgosft/webutviklingEksamen/index.html#">
+    <meta name="twitter:title" content="webutvikling">
+    <meta name="twitter:description" content="html, css , seo , uu">
+    <meta name="twitter:image" content="https://itstud.hiof.no/~gorgosft/webutviklingEksamen/bilder/bilde1.jpeg">
+
+  </head>
+  <body>
+    <div id="grid-container">
+      <header>
+        <h1>Webutvikling </h1>
+       <i class="fa-sharp fa-solid fa-hand-wave fa-bounce" href="#forside" class="snarvei" ></i> 
+      </header>
+      
+      <!-- Jeg tok insto på nav her i fra https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+      <nav class="topnav" id="myTopnav">
+        <a href="index.html"><img src="logo/logo3.png" alt="bilde av logoen"></a>
+        
+        <a href="UUvsSEO.html">UU vs SEO</a>
+        <a href="cms.html">CMS</a>
+        <a href="Analyse.html" >Analyse</a>
+        <a href="kontant.html" >Kontakt oss</a>
+        
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+          <script>
+           function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";}}
+          </script>
+        </a>
+      </nav>
+      
+      <main>
+       
+        <article id="forside" class="Fordside">
+          <h3>UU vs SEO</h3>
+          <img src="bilder/bilde1.jpeg" alt="bilde av en menneske som er fra framtiden">
+          <!-- Photo by <a href="https://unsplash.com/@pramodtiwari?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Pramod Tiwari</a> on <a href="https://unsplash.com/t/3d-renders?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->
+          <p>
+            UU eller universell utforming går ut på å gjøre tjenesten eller nettsiden din, 
+            tilgjenglige til alle bruker. Med andre ord det vil si at produkte ditt må
+            tilpasse seg og kan brukes av alle
+          </p>
+          <a href="UUvsSEO.html">Les mer</a>
+        </article>
+        
+        <article class="Fordside">
+          <h3>CMS</h3>
+          <img src="bilder/bilde5.jpeg" alt="Bilde av et bil som er parkert i mørket">
+          <!-- Photo by <a href="https://unsplash.com/@brechtcorbeel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brecht Corbeel</a> on <a href="https://unsplash.com/t/3d-renders?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->
+          <p>
+            CMS er en progrmvare som hjelper og gjøre det letter for brukeren med å lage,  
+            organisere og endre på inhold på netside. 
+            bruker trenger ikke å ha spesialisert teknisk kunskap
+          </p>
+          <a href="cms.html">Les mer</a>
+        </article>
+        
+        <article class="Fordside">
+          <h3>Analyse</h3>
+          <img src="bilder/bilde4.jpeg" alt="Bilde av en tog som kjører i tåk">
+          <!-- Photo by <a href="https://unsplash.com/@pramodtiwari?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Pramod Tiwari</a> on <a href="https://unsplash.com/t/3d-renders?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Donec erat libero, scelerisque quis aliquet sed, 
+            fringilla sollicitudin orci. 
+            Nulla semper erat id nulla pretium rutrum. 
+            Pellentesque non sem arcu.
+          </p>
+          <a href="Analyse.html">Les mer</a>
+        </article>	
+
+
+
+
+    
+
+  </main>
+</div>
+<footer>
+  <p> Gorgos Fares Tammo || Gorgos@gmail.com </p>
+  <section>
+    <p>Du kan følge oss på:</p>
+    <!-- La inn aria label in wave -->
+    <a href="https://www.facebook.com" class="fa fa-facebook" aria-label="link til facebook side"></a>
+    <a href="https://twitter.com/home" class="fa fa-twitter" aria-label="link til twitter side"></a>
+    <a href="https://no.pinterest.com/" class="fa fa-pinterest" aria-label="link til pinterest side"></a>
+      </section>
+    </footer>  
+  </body>
+
+  </html>
+
+
+ 
